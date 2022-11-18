@@ -144,5 +144,6 @@ Django docker
     python manage.py makemigrations Players
     python manage.py makemigrations Teams
     python manage.py migrate
+    docker build --no-cache -t proyect-xerpa .
     docker run -d -p 80:80 --name proyect-xerpa --restart always proyect-xerpa
 ```
